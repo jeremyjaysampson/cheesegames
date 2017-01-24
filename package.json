@@ -1,0 +1,26 @@
+{
+  "name": "cheesegames",
+  "version": "1.0.0",
+  "description": "Website trial",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "nodemon -e css,ejs,js,json --watch app --ignore feedback.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremyjaysampson/cheesegames.git"
+  },
+  "author": "Jeremy Sampson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremyjaysampson/cheesegames/issues"
+  },
+  "homepage": "https://github.com/jeremyjaysampson/cheesegames#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "reload": "^1.1.0",
+    "socket.io": "^1.7.2"
+  }
+}
