@@ -4,7 +4,7 @@
 <head lang = "en">
     <title>Get the latest Unity games - cheesegames.net</title>
     
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -12,7 +12,7 @@
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     
-    <link rel='stylesheet' href='/css/style.css' />
+    <link href = "style.css" rel = "stylesheet">
     
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -26,11 +26,11 @@
 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style = "outline-color: #f2f2f2;">
 <span class="navbar-toggler-icon"></span>
 </button>
-<a class="navbar-brand" href="">cheesegames</a>
+<a class="navbar-brand" href="">logo</a>
 
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 <ul class="navbar-nav mr-auto">
-<li class="nav-item active">
+<li class="nav-item">
 <a class="nav-link" href="">Featured</a>
 </li>
 <li class="nav-item">
@@ -48,47 +48,44 @@
 <li class="nav-item">
 <a class="nav-link" href="">Login</a>
 </li>
-<li class="nav-item">
+<li class="nav-item active">
 <a class="nav-link" href="">Register</a>
-</li>
+</li>	
 </form>
 </div> 
 </nav>
-        
 <div class="brandBanner">
-<p>The social platform to play and distribute indie games for free. <b><a href = "">Learn more</a></b><a href = "" class = "twitterSocialLink">Twitter</a>
-</p>
+<p>Registering a cheesegames.net account grants access to upload games and participate in community discussion. 
+<b><a href = "">Learn more</a></b></p>
 </div>
-<div class = "row">
-<div class = "featuredGames col-xs-12 col-sm-9">
-<?php for ($x = 0; $x < 6; $x++) { ?>
-<div class = "card"
-id="popover<?php echo $x?>" data-trigger="hover" data-html="true"
-data-content="<p class = 'supportedPlatformsPopover'><b>Windows MacOS Linux</b><br/></p><p>Game Placeholder Long Description lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor erat id risus iaculis, in interdum nisl sollicitudin. Sed pellentesque pellentesque metus, quis malesuada eros volutpat vel.</p><div class = 'gameImagePopover' style = 'width: 240; height: 135px; background-color: #666666; margin-top: 10px;'></div>" 
-data-container = "body" title="Game Placeholder Title">
-<a href = ""><img class = "card-img-top" src = "" alt = "" width = "255px" height="202px" style = ""></img></a>
-<a href = ""><p class = "card-title" style = "margin: 0px;">Game Placeholder Title</p></a>
-<p class = "card-text"><small>Game Placeholder Short Description</small></p>
-<script>
-$('#popover<?php echo $x?>').popover({
-	trigger: "hover"
-});
-</script>
+<div class = "loginForm col-xs-9 col-sm-7 col-md-6">
+<div class="alert alert-success" role="alert">
+  <b>Done!</b> Please go to your email to verify your account.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
-<?php } ?>
+<div class="alert alert-danger" role="alert">
+  <b>Uh oh!</b> Your password can't contain X, Y and Z.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
-<div class = "homeInfo col-xs-12 col-sm-3">
-<h5>Don't see anything you like?</h5>
-<a href = "" class = "btn btn-md btn-secondary">Browse Games</a>
-<h5 style = "margin-top: 20px;">Blog / Announcements</h5>
-<a href = ""><p>Placeholder Blog Entry</p></a>
-<a href = ""><p>Placeholder Blog Entry</p></a>
-<a href = ""><p>Placeholder Blog Entry</p></a>
-<a href = ""><p>Placeholder Blog Entry</p></a>
-<a href = ""><p>Placeholder Blog Entry</p></a>
-<h5 style = "margin-top: 20px;">Want your game featured?</h5>
-<a href = ""><p><b>Learn about games featuring</b></p></a>
+<div class="alert alert-danger" role="alert">
+  <b>Uh oh!</b> Your email address must have an @ symbol.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
 </div>
+<h3>Register a cheesegames.net account.</h3>
+  <input type="text" class="form-control" id="username" placeholder = "Username" style = "display: inline-block; width: 100%; margin-top: 20px;"> 
+  <input type="password" class="form-control" id="password" placeholder = "Password" style = "display: inline-block; width: 100%; margin-top: 15px;"> 
+  <input type="password" class="form-control" id="passwordAgain" placeholder = "Password again" style = "display: inline-block; width: 100%; margin-top: 15px;"> 
+  <input type="text" class="form-control" id="emailAddress" placeholder = "Email address" style = "display: inline-block; width: 100%; margin-top: 15px;">
+  <p class="form-check-label" style = "	margin-top: 10px;">
+  <input class="form-check-input" type="checkbox" style = "margin-top: .4rem	"> I accept the <a href = "">Terms of Service</a>
+  </p>
+<a class = "btn btn-lg btn-success" href = "" style = "display: inline-block; margin-top: 20px;" >Register</a>
 </div>
 <footer class = "footer">
     <hr>
@@ -105,7 +102,6 @@ $('#popover<?php echo $x?>').popover({
     </div>
         
 </footer>
-                                                                                                      
 </body>
-<script src="/reload/reload.js"></script>    
+    
 </html>
